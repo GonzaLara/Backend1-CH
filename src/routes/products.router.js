@@ -2,10 +2,10 @@ import { Router } from "express";
 
 const router = Router();
 
-//array para almacenar
-let products = [];
+// Array para almacenar los productos
+export let products = [];
 
-//obtener todos los recursos
+// Obtener todos los recursos
 router.get('/', (req, res)=>{
     res.json(products);
 });
